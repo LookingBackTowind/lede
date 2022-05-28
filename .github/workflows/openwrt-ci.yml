@@ -60,7 +60,7 @@ jobs:
 
       - name: Compile firmware
         run: |
-          make -j$(nproc) || make -j1 V=s
+          make custom.config -j$(nproc) || make custom.config -j1 V=s
           echo "======================="
           echo "Space usage:"
           echo "======================="
